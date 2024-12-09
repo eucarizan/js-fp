@@ -5,6 +5,7 @@
   - [about](#about)
   - [stages](#stages)
     - [1: print the prices](#1-print-the-prices)
+    - [2: measure the total income of your shop](#2-measure-the-total-income-of-your-shop)
 
 ## learnings 
 this project will introduce you to hyperskill projects. practice javascript coding to build a program that can automate your account management routine.
@@ -41,19 +42,63 @@ pancake: $3.2
 
 </details>
 
+### 2: measure the total income of your shop 
+<details>
+<summary>you know how much you earned by selling each item. calculate the total earnings before staff and other expenses!</summary>
+
+#### 2.1 description
+a month has passed since the opening of your shop. let's calculate the total earnings for this period! you know the total earned amount for each item:
+
+item name|earned amount
+:-:|:-:
+`bubblegum`|`$202`
+`toffee`|`$118`
+`ice cream`|`$2250`
+`milk chocolate`|`$1680`
+`doughnut`|`$1075`
+`pancake`|`$80`
+
+**use the above data to find the total income for the first month and log the results as shown below.**
+
+#### 2.2 objectives
+in this stage, your program should:
+- print the `earned amount`: line.
+- print the item names and the earned amount for each of them;
+- print the total earnings as shown below. replace `0.0` with the actual total sum:
+
+```
+income: $0.0
+```
+
+#### 2.3 examples
+**example 1**: _output at the ned of this stage would look like below **(figures may vary)**_
+```
+earned amount:
+bubblegum: $202
+toffee: $118
+ice cream: $2250
+milk chocolate: $1680
+doughnut: $1075
+pancake: $80
+
+income: $7777.0
+```
+
+</details>
+
 [<<](https://github.com/eucarizan/front-end/blob/main/README.md)
 <!--
 :%s/\(Sample \(Input\|Output\) \d:\)\n\(.*\)/```\r\r**\1**\r```\3/gc
 
-### 0: 
+### 3: calculate net income
 <details>
-<summary></summary>
+<summary>measure the shop's net income. subtract staff, electricity, and security expenses.</summary>
 
-#### 0.1 description
+#### 3.1 description
 
-#### 0.2 objectives
+#### 3.2 objectives
 
-#### 0.3 examples
+#### 3.3 examples
 
 </details>
 -->
