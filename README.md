@@ -6,6 +6,7 @@
   - [stages](#stages)
     - [1: print the prices](#1-print-the-prices)
     - [2: measure the total income of your shop](#2-measure-the-total-income-of-your-shop)
+    - [3: calculate net income](#3-calculate-net-income)
 
 ## learnings 
 this project will introduce you to hyperskill projects. practice javascript coding to build a program that can automate your account management routine.
@@ -86,19 +87,72 @@ income: $7777.0
 
 </details>
 
-[<<](https://github.com/eucarizan/front-end/blob/main/README.md)
-<!--
-:%s/\(Sample \(Input\|Output\) \d:\)\n\(.*\)/```\r\r**\1**\r```\3/gc
-
 ### 3: calculate net income
 <details>
 <summary>measure the shop's net income. subtract staff, electricity, and security expenses.</summary>
 
 #### 3.1 description
+in the final stage, let's calculate the shop's net income. to do this, you need to retrieve staff and other expenses from the user input and subtract them from the income you came up with in the previous stage.
+
+you don't need to change the previous functionality of your program, but to expand it by adding both inputs and calculating the net income.
+
+we've imported the `sync-input` library that you must use to take input from the user.
+
+>note that the user's input will be a string value. therefore, before performing subtraction, make sure to convert the retrieved value to an integer.
 
 #### 3.2 objectives
+in this stage, your program should:
+
+- print the item names, what you earned for each of them and total earnings as before;
+- ask users for `staff expenses` with the staff expenses: string and for other expenses with the `other expenses:` string;
+- calculate and print the net income as shown below. replace `0.0` with the actual net income:
+
+```
+net income: $0.0
+```
 
 #### 3.3 examples
+the greater-than symbol followed by a space (`> `) represents the user input. note that it's not part of the input: it is just used to separate the user input from the output of your program in the stage examples, you don't need to print the `>` sign!
+
+**example 1**: _the user inputs 2000 for staff expenses and 205 for other expenses accordingly:_
+```
+earned amount:
+bubblegum: $202
+toffee: $118
+ice cream: $2250
+milk chocolate: $1680
+doughnut: $1075
+pancake: $80
+
+income: $5405
+staff expenses:
+> 2000
+other expenses:
+> 205
+net income: $3200
+```
+
+**example 2**: _the user inputs 5203 for staff expenses and 400 for other expenses accordingly:_
+```
+earned amount:
+bubblegum: $202
+toffee: $118
+ice cream: $2250
+milk chocolate: $1680
+doughnut: $1075
+pancake: $80
+
+income: $5405
+staff expenses:
+> 5203
+other expenses:
+> 400
+net income: $-198
+```
 
 </details>
+
+[<<](https://github.com/eucarizan/front-end/blob/main/README.md)
+<!--
+:%s/\(Sample \(Input\|Output\) \d:\)\n\(.*\)/```\r\r**\1**\r```\3/gc
 -->
