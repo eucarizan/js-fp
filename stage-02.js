@@ -1,22 +1,21 @@
 const input = require('sync-input');
 
-let bubbleGum = 202;
-let toffee = 118;
-let iceCream = 2250;
-let milkChocolate = 1680;
-let doughnut = 1075;
-let pancake = 80;
-let income = bubbleGum + toffee + iceCream + milkChocolate + doughnut + pancake;
-let output = `
-Earned amount:
-Bubblegum: $${bubbleGum}
-Toffee: $${toffee}
-Ice cream: $${iceCream}
-Milk Chocolate: $${milkChocolate}
-Doughnut: $${doughnut}
-Pancake: $${pancake}
+let earnings = {
+  "Bubblegum": 202,
+  "Toffee": 118,
+  "Ice cream": 2250,
+  "Milk Chocolate": 1680,
+  "Doughnut": 1075,
+  "Pancake": 80
+};
 
-Income: $${income}
-`;
+let totalIncome = 0;
 
-console.log(output);
+console.log("Earned amount:");
+
+for (let key in earnings) {
+  console.log(key + ": $" + earnings[key]);
+  totalIncome += earnings[key];
+}
+    
+console.log("Income: $" + totalIncome);
